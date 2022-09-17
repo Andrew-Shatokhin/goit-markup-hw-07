@@ -1,5 +1,5 @@
 /* Змінні кольори */
-:root {
+/* :root {
   --primary-text-color: #757575;
   --secondary-text-color: #ffffff;
   --title-text-color: #212121;
@@ -17,34 +17,34 @@
   --background-icon-color: rgba(255, 255, 255, 0.1);
   --card-shadow: 0px 2px rgba(0, 0, 0, 0.2), 0px 1px rgba(0, 0, 0, 0.14),
     0px 1px rgba(0, 0, 0, 0.12);
-}
-ul {
+} */
+/* ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 /* Граничні розміри блоків */
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 /* Скидання відступів знизу фото */
-img {
+/* img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
 /* ==================Стилі для index.html============= */
-body {
+/* body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-}
+} */
 
-/* Хедер */
+/* Хедер
 .page-header,
 .page-nav,
 .contact {
@@ -54,9 +54,9 @@ body {
 
 .page-header {
   border-bottom: 1px solid #ececec;
-}
+} */
 
-/* Логотип WebStudio в хедері */
+/* Логотип WebStudio в хедері
 .logo {
   color: var(--logo-header-color);
   font-family: Raleway, sans-serif;
@@ -71,19 +71,19 @@ body {
 .logo__name,
 .logo-footer__name {
   color: var(--accent-color);
-}
+} */
 
 /* Навігація в хедері */
 
-.container {
+/* .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 
-.site-nav {
+/* .site-nav {
   display: flex;
   margin-left: 93px;
 }
@@ -105,9 +105,9 @@ body {
   text-align: left;
   vertical-align: top;
   letter-spacing: 0.02em;
-}
+} */
 
-.site-nav .site-nav__link:hover,
+/* .site-nav .site-nav__link:hover,
 .site-nav .site-nav__link:focus {
   color: var(--accent-color);
 }
@@ -131,19 +131,19 @@ body {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-}
+} */
 
-.site-nav__link,
+/* .site-nav__link,
 .contact__mail,
 .contact__tel {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* Контакти в хедері */
 
-.contact {
+/* .contact {
   display: flex;
   margin-left: auto;
   align-items: center;
@@ -192,11 +192,11 @@ body {
 .contact__tel:hover,
 .contact__tel:focus {
   color: var(--accent-color);
-}
+} */
 
 /* Герой */
 
-/* Тимчасовий фон для Героя */
+/* Тимчасовий фон для Героя
 .section.hero {
   text-align: Center;
   padding-top: 200px;
@@ -211,9 +211,9 @@ body {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-}
+} */
 
-.hero__title {
+/* .hero__title {
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 30px;
@@ -226,9 +226,9 @@ body {
   line-height: 1.36;
   vertical-align: top;
   letter-spacing: 0.06em;
-}
+} */
 
-/* Кнопка замовити послугу*/
+/* Кнопка замовити послугу
 .hero__btn {
   display: inline-block;
   border-radius: 4px;
@@ -245,13 +245,13 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
 
 /* Особливості */
 
 /* Скритий заголовок Особливості */
 
-.feature__title_visually-hidden,
+/* .feature__title_visually-hidden,
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -263,14 +263,14 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
+} */
 
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
-.feature-list {
+/* .feature-list {
   display: flex;
   column-gap: 30px;
 }
@@ -287,9 +287,9 @@ body {
   height: 120px;
   background-color: var(--secondary-background-color);
   margin-bottom: 30px;
-}
+} */
 
-.feature-list__title {
+/* .feature-list__title {
   padding: 0;
   margin-top: 0;
   margin-bottom: 10px;
@@ -300,25 +300,25 @@ body {
   line-height: 1.14;
   text-align: left;
   vertical-align: top;
-}
+} */
 
-.feature-list__text {
+/* .feature-list__text {
   padding: 0;
   margin: 0;
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
   vertical-align: top;
-}
+} */
 
-/* Чим ми займаємося */
+/* Чим ми займаємося
 
 .section.labor {
   padding-top: 0;
   padding-bottom: 94px;
-}
+} */
 
-.labor__title,
+/* .labor__title,
 .team__title {
   padding: 0;
   margin-top: 0;
@@ -329,9 +329,9 @@ body {
   line-height: 1.17;
   text-align: center;
   vertical-align: top;
-}
+} */
 
-.labor-list {
+/* .labor-list {
   display: flex;
   justify-content: space-between;
   column-gap: 30px;
@@ -364,9 +364,9 @@ body {
   line-height: 1.14;
   text-align: center;
   vertical-align: top;
-}
+} */
 
-/* Команда */
+/* Команда
 
 .team {
   background-color: var(--secondary-background-color);
@@ -451,11 +451,11 @@ body {
 .socials-list__link:hover .socials-list__icon,
 .socials-list__link:focus .socials-list__icon {
   fill: var(--secondary-text-color);
-}
+} */
 
 /* Постійні клієнти */
 
-.clients__title {
+/* .clients__title {
   padding: 0;
   margin-top: 0;
   margin-bottom: 50px;
@@ -465,9 +465,9 @@ body {
   line-height: 42px;
   text-align: center;
   color: var(--title-text-color);
-}
+} */
 
-.clients-list {
+/* .clients-list {
   display: flex;
   justify-content: center;
   column-gap: 30px;
@@ -510,9 +510,9 @@ body {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-/* Футер */
+/* Футер
 .site-footer {
   display: flex;
   align-items: baseline;
@@ -521,9 +521,9 @@ body {
   background-color: var(--hero-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
+} */
 
-.logo-footer {
+/* .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
   color: var(--secondary-text-color);
@@ -534,9 +534,9 @@ body {
   line-height: 1.19;
   text-align: Left;
   vertical-align: Top;
-}
+} */
 
-.address-info a {
+/* .address-info a {
   color: var(--secondary-text-color);
   text-decoration: none;
   font-style: normal;
@@ -563,19 +563,19 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* Друга частина футера */
 
-.footer-address {
+/* .footer-address {
   margin-right: 70px;
 }
 
 .footer-network {
   text-align: center;
-}
+} */
 
-.footer-network__title {
+/* .footer-network__title {
   margin: 0 0 20px 0;
   padding: 0;
   font-weight: 700;
@@ -585,9 +585,9 @@ body {
   vertical-align: top;
   color: var(--secondary-text-color);
   text-transform: uppercase;
-}
+} */
 
-.footer-socials {
+/* .footer-socials {
   display: flex;
   justify-content: center;
   column-gap: 10px;
@@ -618,10 +618,10 @@ body {
 .footer-socials__link:hover,
 .footer-socials__link:focus {
   background-color: var(--accent-color);
-}
+} */
 /* ПІДПИСКА У ФУТЕРІ */
 
-.signup {
+/* .signup {
   margin-left: auto;
 }
 
@@ -696,9 +696,9 @@ body {
 .signup__icon-send {
   align-items: center;
   margin-left: 10px;
-}
+} */
 
-/* ==============Модальне вікно============ */
+/* ==============Модальне вікно============
 .backdrop {
   position: fixed;
   top: 0;
@@ -719,9 +719,9 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
+} */
 
-.modal {
+/* .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -758,10 +758,10 @@ body {
 
 .icon-close:hover {
   fill: var(--accent-color);
-}
+} */
 
 /* =========================Форма для модального вікна==================== */
-.modal-title {
+/* .modal-title {
   margin: 0 0 12px 0;
   padding: 0;
   color: var(--title-text-color);
@@ -914,13 +914,13 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
 
 /* =========================/Форма для модального вікна==================== */
 
 /* ================Стилі для Portfolio.html ======================*/
 
-/* Кнопки портфоліо */
+/* Кнопки портфоліо
 
 .button-filter {
   display: inline-block;
@@ -964,9 +964,9 @@ body {
   justify-content: center;
   column-gap: 8px;
   margin-bottom: 50px;
-}
+} */
 
-.project-list {
+/* .project-list {
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -1027,9 +1027,9 @@ body {
   border-right: 1px solid var(--border-card-color);
   border-bottom: 1px solid var(--border-card-color);
   border-left: 1px solid var(--border-card-color);
-}
+} */
 
-.project-title {
+/* .project-title {
   padding: 0;
   margin: 0 0 4px 0;
   color: var(--title-text-color);
@@ -1039,9 +1039,9 @@ body {
   text-align: left;
   vertical-align: Top;
   letter-spacing: 0.06em;
-}
+} */
 
-.project-list a {
+/* .project-list a {
   text-decoration: none;
 }
 
@@ -1053,4 +1053,4 @@ body {
   line-height: 1.88;
   text-align: left;
   vertical-align: Top;
-}
+} */
