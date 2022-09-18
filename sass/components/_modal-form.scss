@@ -21,7 +21,6 @@
   font-size: 12px;
   line-height: 1.17;
   text-align: left;
-  vertical-align: top;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
 }
@@ -41,10 +40,11 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.input-form:focus {
-  outline: none;
-  border-color: var(--accent-color);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .icon-form {
@@ -56,10 +56,10 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.input-form:focus + .icon-form {
-  fill: var(--accent-color);
+  .input-form:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .textarea-form {
@@ -73,17 +73,17 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.textarea-form:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 
-.textarea-form::placeholder {
-  font-size: 12px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .checkbox-box {
@@ -101,21 +101,21 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .input-checkbox:checked + .policy & {
+    background-color: var(--accent-color);
+    border-color: transparent;
+  }
+  .input-checkbox:focus + .policy & {
+    box-shadow: 0 0 0 2px #212121;
+  }
 }
 
 .use-checkbox-icon {
   display: none;
-}
-
-.input-checkbox:checked + .policy .checkbox-icon {
-  background-color: var(--accent-color);
-  border-color: transparent;
-}
-.input-checkbox:checked + .policy .use-checkbox-icon {
-  display: block;
-}
-.input-checkbox:focus + .policy .checkbox-icon {
-  box-shadow: 0 0 0 2px #212121;
+  .input-checkbox:checked + .policy & {
+    display: block;
+  }
 }
 
 .policy {

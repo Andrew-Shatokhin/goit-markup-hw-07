@@ -1,4 +1,3 @@
-/* Хедер */
 .page-header,
 .page-nav,
 .contact {
@@ -19,7 +18,7 @@
   margin-left: 50px;
 }
 
-.site-nav .site-nav__link {
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -31,32 +30,32 @@
   line-height: 1.14;
   text-align: left;
   letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.site-nav .site-nav__link:hover,
-.site-nav .site-nav__link:focus {
+.site-nav__link_current {
   color: var(--accent-color);
 }
 
-.site-nav .site-nav__link.site-nav__link_current {
-  color: var(--accent-color);
-}
-
-.site-nav__item .site-nav__link_current {
+.site-nav__link_current {
   position: relative;
-}
 
-.site-nav__link_current::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
 }
 
 .site-nav__link,
@@ -79,7 +78,8 @@
   margin-left: 50px;
 }
 
-.contact__item a {
+.contact__mail,
+.contact__tel {
   display: flex;
   align-items: center;
 }
@@ -92,12 +92,13 @@
 .contact__icon-tel {
   fill: currentColor;
   margin-right: 10px;
+
+  &:hover,
+  &:hover {
+    fill: var(--accent-color);
+  }
 }
 
-.contact__icon-mail:hover,
-.contact__icon-tel:hover {
-  fill: var(--accent-color);
-}
 .contact__mail,
 .contact__tel {
   padding-top: 32px;
@@ -111,11 +112,9 @@
   text-align: left;
   vertical-align: top;
   letter-spacing: 0.02em;
-}
 
-.contact__mail:hover,
-.contact__mail:focus,
-.contact__tel:hover,
-.contact__tel:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

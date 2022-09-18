@@ -1,4 +1,3 @@
-/* Футер */
 .site-footer {
   display: flex;
   align-items: baseline;
@@ -8,7 +7,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.address-info a {
+
+.address-info__item .address-info__link_text-color {
+  color: var(--info-address-color);
+}
+
+.address-info__link {
   color: var(--secondary-text-color);
   text-decoration: none;
   font-style: normal;
@@ -16,25 +20,21 @@
   line-height: 1.71;
   text-align: Left;
   vertical-align: Top;
-}
 
-.address-info__item .address-info__link_text-color {
-  color: var(--info-address-color);
-}
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 
-.address-info__list a:hover,
-.address-info__list a:focus {
-  color: var(--accent-color);
+  & {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .address-info__item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.address-info__link {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Друга частина футера */
@@ -69,15 +69,15 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer-socials__icon {
   fill: var(--accent-icon-color);
-}
-
-.footer-socials__link:hover,
-.footer-socials__link:focus {
-  background-color: var(--accent-color);
 }
 
 /* ПІДПИСКА У ФУТЕРІ */
@@ -117,6 +117,20 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: left;
+    vertical-align: center;
+  }
 }
 
 .signup__btn {
@@ -139,19 +153,6 @@
   letter-spacing: 0.06em;
   cursor: pointer;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-}
-.signup__email:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-
-.signup__email::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  text-align: left;
-  vertical-align: center;
 }
 
 .signup__icon-send {
