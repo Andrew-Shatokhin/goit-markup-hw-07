@@ -107,7 +107,7 @@
     border-color: transparent;
   }
   .input-checkbox:focus + .policy & {
-    box-shadow: 0 0 0 2px #212121;
+    box-shadow: 0 0 0 2px var(--accent-color);
   }
 }
 
